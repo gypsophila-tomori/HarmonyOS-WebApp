@@ -1,0 +1,69 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\lanca\\.ohos\\config\\default_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A0C9398EEA9F9B1EC6248B975EDB2F5BA856B70CF44639ED4EBCB75683D1FFC8B03CB7E98C4E6",
+          "profile": "C:\\Users\\lanca\\.ohos\\config\\default_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\lanca\\.ohos\\config\\default_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.p12",
+          "storePassword": "0000001A3506406AB2E97DE3CA33C3216840959476751B3C3AC18ABD9D4E730F0B3F8B3B36E073C06612"
+        }
+      },
+      {
+        "name": "test",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\lanca\\.ohos\\config\\test_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A16B6EA075D4E5F9A7A44E99C234C15088AC7D05CFDC22858270C708BFCD2F60708C21A42ABE2",
+          "profile": "C:\\Users\\lanca\\.ohos\\config\\test_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\lanca\\.ohos\\config\\test_WebAPP_oq_yqZK_fiXvCpZQOWCkMQEqnj1w-W0M0HwZzY2jvCo=.p12",
+          "storePassword": "0000001A0CA720939680C08F591089D4BBDDB6307090171B3E77F960429F48975CC98ABCF4B598CB1342"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.0(18)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
